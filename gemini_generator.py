@@ -8,3 +8,9 @@ def generate_document(self, document_type, parties, terms, dates):
     )
     response = self.model.generate_content(prompt)
     return response.text
+    # gemini_generator.py
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+
+self.model = genai.GenerativeModel(model_name)
+response = self.model.generate_content(prompt)
+```[cite: 3]
