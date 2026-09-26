@@ -19,3 +19,6 @@ if st.session_state.get("show_edit"):
 st.download_button("📄 Download as .TXT", data=generated_text, ...)
 st.download_button("📝 Download as .DOCX", data=format_docx(...), ...)
 st.download_button("📕 Download as .PDF", data=format_pdf(...), ...)
+# app.py
+# Streamlit collects input -> FastAPI handles it
+response = requests.post("http://localhost:8000/generate", json={...})
