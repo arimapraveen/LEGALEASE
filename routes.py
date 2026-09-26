@@ -8,3 +8,9 @@ def generate_legal_document(request: DocumentRequest):
         request.dates
     )
     return {"document": response}
+# routes.py
+class DocumentRequest(BaseModel):
+    document_type: str
+    parties: str
+    terms: str
+    dates: str
