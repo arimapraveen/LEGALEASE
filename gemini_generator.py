@@ -13,4 +13,3 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 self.model = genai.GenerativeModel(model_name)
 response = self.model.generate_content(prompt)
-```[cite: 3]
